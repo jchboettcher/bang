@@ -12,7 +12,7 @@ const App = ({ socket }) => (
     <ThemeProvider theme={theme}>
       <div className="App">
         <Switch>
-          <Route exact path="/hi">
+          <Route exact path="/">
             <div>
               <List socket={socket}/>
               <button onClick={
@@ -27,9 +27,9 @@ const App = ({ socket }) => (
               </button>
             </div>
           </Route>
-          <Route exact path="/">
+          {/* <Route exact path="/">
             <div>home</div>
-          </Route>
+          </Route> */}
           <Redirect to="/" />
         </Switch>
       </div>
